@@ -1,0 +1,11 @@
+# Environnement virutel Python
+venv/
+.venv/
+
+# Cache de configuration VS Code
+.vscode/
+
+# Fichier de cache Python
+__pycache__/
+*.pyc
+
