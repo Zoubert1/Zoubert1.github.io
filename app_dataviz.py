@@ -283,8 +283,8 @@ else:
     texte_croissance, libelle_croissance = "n/a", "Croissance"
 
 c1, c2, c3, c4 = st.columns(4)
-c1.metric("Passagers (milliers)", formater(total))
-c2.metric("Moyenne mensuelle", formater(moyenne))
+c1.metric("Passagers (milliers)", f"{formater(total)}k")
+c2.metric("Moyenne mensuelle", f"{formater(moyenne)}k")
 c3.metric("Mois record", f"{record['mois']} {record['annee']}", f"{formater(record['passengers'])} passagers", delta_color="off")
 c4.metric(libelle_croissance, texte_croissance)
 
